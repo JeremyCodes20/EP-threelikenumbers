@@ -13,7 +13,9 @@ def main():
             continue
         valid_input = True
 
-    three_num(value)
+    output = three_num(value)
+    print("There", ("is" if output == 1 else "are"), output, "total substrings within", value,
+          "that are divisible by 3.")
 
 
 main()
