@@ -1,5 +1,6 @@
 from src.threenum import three_num
 from src.threenum import is_three_like
+from src.threenum import digit_three_like
 
 
 def main():
@@ -19,6 +20,10 @@ def main():
           "that are divisible by 3.")
 
     print(value, ("is" if is_three_like(value) else "is not"), "three-like.")
+
+    digit_value = int(input("Please enter a digit you would like to try: "))
+
+    print("There are", digit_three_like(digit_value), str(digit_value) + "-digit numbers that are three-like.")
 
 
 main()
