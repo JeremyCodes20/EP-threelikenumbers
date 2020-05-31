@@ -1,6 +1,3 @@
-import math
-
-
 def three_num(value):
     total = 0  # total substrings
     str_value = str(value)
@@ -13,3 +10,10 @@ def three_num(value):
                 total += 1
 
     return total
+
+
+def is_three_like(value):
+    if three_num(value) % 3 == 0:
+        return True
+    else:
+        return False

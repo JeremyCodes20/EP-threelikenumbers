@@ -1,4 +1,5 @@
 from src.threenum import three_num
+from src.threenum import is_three_like
 
 
 def main():
@@ -16,6 +17,8 @@ def main():
     output = three_num(value)
     print("There", ("is" if output == 1 else "are"), output, "total substrings within", value,
           "that are divisible by 3.")
+
+    print(value, ("is" if is_three_like(value) else "is not"), "three-like.")
 
 
 main()
