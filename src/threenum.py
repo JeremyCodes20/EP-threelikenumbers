@@ -24,8 +24,6 @@ def digit_three_like(digits):
     upper_bound = pow(10, digits) - 1
     sum = 0
 
-    print(lower_bound, upper_bound)
-
     for i in range(lower_bound, upper_bound + 1):
         if is_three_like(i):
             sum += 1
